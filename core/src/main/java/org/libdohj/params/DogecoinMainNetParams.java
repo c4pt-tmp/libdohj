@@ -59,7 +59,7 @@ public class DogecoinMainNetParams extends AbstractDogecoinParams {
         // Note this is an SHA256 hash, not a Scrypt hash. Scrypt hashes are only
         // used in difficulty calculations.
         String genesisHash = genesisBlock.getHashAsString();
-        checkState(genesisHash.equals("000007ce46e6c59844c34fa7ba5b27c8dac0653a27fcfb7340cc0158849e4afd"),
+        checkState(genesisHash.equals("6be1ade2619d1402571996e436b726c8b0bd72f10fdcae10cff5acd369118626"),
                 genesisHash);
 
         majorityEnforceBlockUpgrade = MAINNET_MAJORITY_ENFORCE_BLOCK_UPGRADE;
