@@ -160,7 +160,7 @@ public abstract class AbstractDogecoinParams extends NetworkParameters implement
             Script.writeBytes(scriptPubKeyBytes, Utils.HEX.decode
                     ("04584ca4018adf8b6b26edb1d2ac869a3ad91f8b92c1d93a89bd7c2142a5f42332a3896625ca5acb660004d4a07d73ec46b456e494cca331e7f3cfb12e0af68538"));
             scriptPubKeyBytes.write(ScriptOpCodes.OP_CHECKSIG);
-            t.addOutput(new TransactionOutput(params, t, COIN.multiply(88), scriptPubKeyBytes.toByteArray()));
+            t.addOutput(new TransactionOutput(params, t, COIN.multiply(1), scriptPubKeyBytes.toByteArray()));
         } catch (Exception e) {
             // Cannot happen.
             throw new RuntimeException(e);
