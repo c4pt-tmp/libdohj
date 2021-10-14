@@ -154,6 +154,9 @@ public abstract class AbstractDogecoinParams extends NetworkParameters implement
                  // 04f0ff 0f1e   010410526164696f436f696e2077616c6c6574
               //  ("04 f0ff0f1e 010410 526164696f436f696e2077616c6c6574");
                 //psz phrase UraniumX 20/April/2018 Radioactive Blockchain Discovered in Deep Space
+                // phrase is 140 characters / 2 is 70 bytes , 70 in hex is 46 as (70) bytes
+    //            ("04 ffff7f1e 0104 46 5572616e69756d582032302f417072696c2f3230313820526164696f61637469766520426c6f636b636861696e20446973636f766572656420696e2044656570205370616365");  
+
             ("04ffff7f1e0104465572616e69756d582032302f417072696c2f3230313820526164696f61637469766520426c6f636b636861696e20446973636f766572656420696e2044656570205370616365");  
             t.addInput(new TransactionInput(params, t, bytes));
             ByteArrayOutputStream scriptPubKeyBytes = new ByteArrayOutputStream();
